@@ -29,7 +29,7 @@ FamiconTV,Sharp
          end
       end
 
-      context 'include special characters', focus: true do
+      context 'include special characters' do
          let(:sample) { <<-EOS
 CoSVON:0.1
 comma,"[,]"
