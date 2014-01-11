@@ -1,0 +1,3 @@
+class Cosvon::Reader
+
+end

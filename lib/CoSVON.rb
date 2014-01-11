@@ -1,5 +1,8 @@
 require "CoSVON/version"
 
-module CoSVON
+module Cosvon
   # Your code goes here...
 end
+
+require "CoSVON/reader"
+
