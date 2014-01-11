@@ -5,4 +5,5 @@ module Cosvon
 end
 
 require "CoSVON/reader"
+require "CoSVON/writer"
 
