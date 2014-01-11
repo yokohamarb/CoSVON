@@ -15,5 +15,15 @@ FamiconTV,Sharp
       it 'サンプルを Hash に変換できる' do
          expect(subject.class).to eq(Hash)
       end
+
+      it 'HashのKeyが正しいこと' do
+         expect(subject.keys).to match_array(%w(DreamCast HI-Saturn FamiconTV))
+      end
+
+      it 'Hashの値が正しいこと' do
+         expect(subject["DreamCast"]).to eq("SEGA")
+         expect(subject["HI-Saturn"]).to eq("Hitachi")
+         expect(subject["FamiconTV"]).to eq("Sharp")
+      end
    end
 end
