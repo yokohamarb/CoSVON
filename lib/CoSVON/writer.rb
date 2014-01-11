@@ -1,9 +1,10 @@
 class Cosvon::Writer
    def dump(data)
-      result = "CoSVON:0.1\n"
-      data.each do |key, val|
-         result << "#{key},#{val}\n"
+      CSV.generate do |csv|
+         csv << ["CoSVON:0.1"]
+         data.each do |key, val|
+            csv << [key,val]
+         end
       end
-      result
    end
 end
